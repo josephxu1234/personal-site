@@ -42,7 +42,7 @@ function App() {
 						<Routes>
 							<Route path="/" element={<Home theme={theme} setTheme={setTheme}/>} />
 							<Route path="about" element={<About />} />
-							<Route path="projects" element={<Projects/>} />
+							<Route path="projects" element={<Projects theme={theme} setTheme={setTheme}/>} />
 							<Route path="contact" element={<Contact />} />
 						</Routes>
 					</Suspense>

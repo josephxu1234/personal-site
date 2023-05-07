@@ -3,6 +3,7 @@ import verbatims from '../images/verbatims.png'
 import raft from '../images/raft.jpeg'
 import neuralnet from '../images/neuralnet.jpeg'
 import scorpio from '../images/scorpio.png'
+import webserver from '../images/webserver.jpeg'
 
 export const projects = [
     {
@@ -39,5 +40,12 @@ export const projects = [
             "Scoring for cybersecurity exercises",
         image: scorpio,
         link: "https://github.com/josephxu1234/scorpio"
+    },
+    {
+        title: "Portfolio Website",
+        description:
+            "The code for this site!",
+        image: webserver,
+        link: "https://github.com/josephxu1234/personal_site"
     },
 ];
