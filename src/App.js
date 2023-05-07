@@ -1,21 +1,16 @@
 import { AnimatePresence } from 'framer-motion';
-import { root } from 'postcss';
-import { lazy, Suspense, useEffect, useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
-import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/AllProjects'));
-//const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
-
-
 
 function App() {
 	const [theme, setTheme] = useState(localStorage.theme)

@@ -1,10 +1,8 @@
 import AboutMeBio from '../components/about/AboutMeBio';
-import AboutCounter from '../components/about/AboutCounter';
-import AboutClients from '../components/about/AboutClients';
 import { AboutMeProvider } from '../context/AboutMeContext';
 import { motion } from 'framer-motion';
 import Art from './Art.jsx'
-import Books from './Books.jsx'
+//import Books from './Books.jsx'
 
 const About = () => {
 	return (
@@ -15,10 +13,10 @@ const About = () => {
 				exit={{ opacity: 0 }}
 				className="container mx-auto"
 			>
-
+				{/* profile image w description */}
 				<AboutMeBio />
 
-				{<section className="py-5 sm:py-10 mt-5 sm:mt-10">
+				<section className="py-5 sm:py-10 mt-5 sm:mt-10">
 
 					<div className="text-center">
 						<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
@@ -26,7 +24,9 @@ const About = () => {
 						</p>
 					</div>
 
-				</section>}
+				</section>
+
+				{/* art gallery */}
 				<Art />
 
 				{/* {

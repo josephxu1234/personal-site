@@ -1,24 +1,13 @@
-import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import developerLight from '../../images/developer.svg';
 import developerDark from '../../images/developer-dark.svg';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import { useEffect } from 'react';
 
 
 const AppBanner = (props) => {
+	// pass theme around from parent to sync dark vs light mode among components
 	var theme = props.theme
-	var setTheme = props.setTheme
-
-
-	useEffect(
-		() => {
-			console.log('FUCKING FUCK')
-		}, [theme]
-	)
-
-	//const [isUserLoggedIn, setIsUserLoggedIn] = useState(localStorage.getItem('isUserLoggedIn'));
 
 	return (
 		<motion.section
@@ -27,6 +16,7 @@ const AppBanner = (props) => {
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 			className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
 		>
+			{/* Initial greeter w typewriter descriptions */}
 			<div className="w-full md:w-1/3 text-left">
 				<motion.h1
 					initial={{ opacity: 0 }}
@@ -67,6 +57,7 @@ const AppBanner = (props) => {
 					/>
 				</motion.div>
 
+				{/* view resume button */}
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -89,6 +80,7 @@ const AppBanner = (props) => {
 					</a>
 				</motion.div>
 			</div>
+			{/* banner photo of a developer */}
 			<motion.div
 				initial={{ opacity: 0, y: -180 }}
 				animate={{ opacity: 1, y: 0 }}

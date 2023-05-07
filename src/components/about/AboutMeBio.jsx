@@ -1,16 +1,7 @@
 import profileImage from '../../images/profile.jpeg';
-import { useContext, createElement } from 'react';
+import { useContext } from 'react';
 import AboutMeContext from '../../context/AboutMeContext';
-//import { parse } from 'postcss';
 import parse from 'html-react-parser'
-
-
-const convertStringToHTML = htmlString => {
-    const parser = new DOMParser();
-    const html = parser.parseFromString(htmlString, 'text/html');
-
-    return html.body;
-}
 
 const AboutMeBio = () => {
 	const { aboutMe } = useContext(AboutMeContext);
@@ -26,6 +17,7 @@ const AboutMeBio = () => {
 						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
 						key={bio.id}
 					>
+						{/* parse js strings representing html => useable html */}
 						{parse(bio.bio)}
 					</p>
 				))}

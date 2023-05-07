@@ -46,6 +46,6 @@ export const projects = [
         description:
             "The code for this site!",
         image: webserver,
-        link: "https://github.com/josephxu1234/personal_site"
+        link: "https://github.com/josephxu1234/personal-site"
     },
 ];

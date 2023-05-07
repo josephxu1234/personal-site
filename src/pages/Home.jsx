@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
 import AppBanner from '../components/shared/AppBanner';
-//import ProjectsGrid from '../components/projects/ProjectsGrid';
-//import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 import Projects from './TopProjects';
-import useThemeSwitcher from '../hooks/useThemeSwitcher';
 const Home = (props) => {
 
 	return (

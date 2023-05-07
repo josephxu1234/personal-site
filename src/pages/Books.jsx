@@ -1,7 +1,9 @@
 import React from 'react';
-import { Card, CardHeader, CardBody, CardFooter, ImageHeader } from 'react-simple-card';
+import { Card, CardHeader, CardBody, ImageHeader } from 'react-simple-card';
 import { books } from '../data/bookRecs';
 
+
+// todo: switch out card w ProjectSingle
 function Books() {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">

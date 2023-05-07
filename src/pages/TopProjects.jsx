@@ -1,6 +1,6 @@
 import { React, useEffect } from 'react';
-import { Card, CardHeader, CardBody, CardFooter, ImageHeader } from 'react-simple-card';
 import { projects } from '../data/ProjectDescriptions';
+import ProjectSingle from '../components/reusable/ProjectSingle';
 
 function Projects(props) {
     useEffect(() => {
@@ -27,21 +27,12 @@ function Projects(props) {
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-            {projects.slice(0, 3).map(
-                (project) => (
-                    <a href={project.link} key={project.title}>
-                            <Card bgColor={bg} fontColor={font}>
-                                <ImageHeader imageSrc={project.image} />
-                                <CardHeader><i>{project.title}</i></CardHeader>
-                                <CardBody>
-                                    <p>{project.description}</p>
-                                </CardBody>
+            {projects.slice(0,3).map(
+                    (project) => (
+                        <ProjectSingle title={project.title} category={project.description} image={project.image} link={project.link}/>
+                    )
 
-                            </Card>
-                    </a>
-                )
-
-            )}
+                )}
 
         </div>
     );

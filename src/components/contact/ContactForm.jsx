@@ -17,6 +17,7 @@ const ContactForm = () => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 
+		// send email via emailjs API
 		emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
 			.then((result) => {
 				console.log(result.text);

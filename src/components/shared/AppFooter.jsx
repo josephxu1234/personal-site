@@ -1,9 +1,6 @@
 import {
 	FiGithub,
-	FiTwitter,
 	FiLinkedin,
-	FiGlobe,
-	FiYoutube,
 	FiEdit3,
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
