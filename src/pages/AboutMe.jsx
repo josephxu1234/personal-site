@@ -3,6 +3,7 @@ import { AboutMeProvider } from '../context/AboutMeContext';
 import { motion } from 'framer-motion';
 import Art from './Art.jsx'
 //import Books from './Books.jsx'
+import Blogs from './Blogs.jsx'
 
 const About = () => {
 	return (
@@ -20,14 +21,30 @@ const About = () => {
 
 					<div className="text-center">
 						<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-							Recent Art (^-^)
+							Recent Writing
 						</p>
 					</div>
 
 				</section>
 
+				<Blogs />
+
+				{/*
+				<section className="py-5 sm:py-10 mt-5 sm:mt-10">
+
+					<div className="text-center">
+						<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+							Recent Art (^-^)
+						</p>
+					</div>
+
+				</section>
+				*/}
+
+
 				{/* art gallery */}
-				<Art />
+
+				{/*<Art />*/}
 
 				{/* {
 					<section className="py-5 sm:py-10 mt-5 sm:mt-10">
@@ -41,6 +58,8 @@ const About = () => {
 				</section>
 				<Books />
 				} */}
+
+				
 
 
 			</motion.div>

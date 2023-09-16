@@ -18,7 +18,7 @@ const photos = [
 
 ];
 function Art() {
-    return <PhotoAlbum layout="rows" photos={photos} />;
+    return <div className="mt-10"><PhotoAlbum layout="rows" photos={photos} /></div>;
 }
 
 export default Art;

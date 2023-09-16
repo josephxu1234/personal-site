@@ -2,13 +2,8 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 
 const contacts = [
 	{
-		id: 1,
-		name: '2645 Saratoga Dr, Fullerton, CA',
-		icon: <FiMapPin />,
-	},
-	{
 		id: 2,
-		name: 'jx6@princeton.com',
+		name: 'jx6@princeton.edu',
 		icon: <FiMail />,
 	},
 	{

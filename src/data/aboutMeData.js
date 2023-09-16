@@ -17,20 +17,14 @@ export const aboutMeData = [
 	{
 		id: 3,
 		bio: "Aside from programming work, I also love <b>teaching</b>! As a lab TA\
-		for my school's DS/algs course and systems course, I've helped others code and debug.\
-		I also frequently privately tutor MS/HS students in math, physics, and computing."
+		for my school's Data Structures/Algorithms course and Systems Programming course, I've helped others code and debug.\
+		I also frequently privately tutor HS/MS students in math, physics, and computing."
 	},
 	{
 		id: 4,
-		bio: "Some fun things about me: apart from being a busy busy CS student at Princeton, I love\
-		reading (<a href='https://www.goodreads.com/user/show/49794464-joseph-xu'><u>add me on Goodreads!</u></a>),\
-		writing (<a href='https://medium.com/@josephxu1234'><u>usually on medium!</u></a>), art, music,\
-		 cooking, fitness, and chess.\
-		I also love <b>trying new things</b>, and lately, I've been learning how to dance and play the guitar!"
-	},
-	{
-		id: 5,
-		bio: "You can check out some of my recent art below!"
+		bio: "Some fun things about me: apart from being a busy, busy CS student at Princeton, I love\
+		reading, writing, art, music, cooking, and fitness.\
+		I also love <b>trying new things</b>, and lately, I've been learning how to dance, play the guitar, and play chess!"
 	},
 
 ];
